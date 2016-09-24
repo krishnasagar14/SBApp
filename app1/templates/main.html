@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/home.png' %}"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <style>
+        body {
+            background : url("{% static 'img/background.png' %}");
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="">
+        <h1 id="pageLogo"><img id="logoId" src="{% static 'img/learning.png' %}"/> Springboard
+            <small id="info1"> LearningHub &#x2015; </small>
+            <small id="info2"> one stop hub for all the learning paths</small>
+        </h1>
+        <div class="row">
+            <div id="side1" class="col-md-2">
+                <div id="sortBox">
+                    <button id="sortBttn"><img id="sortImg" src="{% static 'img/layers.png' %}"/>    SortBy</button>
+                    <div id="divRadios">
+                        <div class="radio" id="divR">
+                          <label><input id="tagRadio1" type="radio" name="optradio" checked="checked">Vote (Up)</label>
+                        </div>
+                        <div class="radio" id="divR">
+                          <label><input id="tagRadio2" type="radio" name="optradio">Vote (Down)</label>
+                        </div>
+                        <div class="radio" id="divR">
+                          <label><input  id="tagRadio3" type="radio" name="optradio">Learners</label>
+                        </div>
+                        <div class="radio" id="divR">
+                          <label><input  id="tagRadio4" type="radio" name="optradio">Duration</label>
+                        </div>
+                    </div>
+                    <div id="msgBox"><b>Total up votes: </b></div>
+                </div>
+                <div class="btn-group" id="tagsBttn">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Tags Menu <span class="caret"></span></button>
+                    <ul id="tagsMenu" class="dropdown-menu" role="menu">
+                    </ul>
+                </div>
+            </div>
+            <div id="side2" class="col-md-10">
+                <input id="searchbox" placeholder="  Search (by tag)" type="text">
+                <button id="searchBttn" type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Search</button>
+                <div id="searchDiv1"><img id="sortImg" src="{% static 'img/layers.png' %}"/>&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div id="loader"></div>
+                <div id="tagsCon">
+                    <div id="pathCon" class="well">
+                        Search using Search box or drop down menu
+                        <!--div id="divTop">
+                            <div id="divTop1" class="row">
+                                <div class="col-md-4"><img src="" id="pathImg"/></div>
+                                <div class="col-md-6">
+                                    <div id="pathLabel"> Name </div>
+                                    <div id="otherInfo">
+                                        <p id="tagListId"><img id="tagId" src=""/>   Tag List</p>
+                                        <div id="tagDetails">
+                                            <div id="oneTag">
+                                                <span id="det"><img src="" id="upImg"/> 10</span>
+                                                <span id="det"><img src="" id="downImg"/> 100</span>
+                                            </div>
+                                            <div id="twoTag">
+                                                <span id="det1"><img src="" id="uImg"/> 131+ Hours</span>
+                                                <span id="det1"><img src="" id="clockImg"/> 312 Learners</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div-->
+                        <!--div id="divBottom">
+                            <label style="color:#0099ff;margin-bottom:10px;"><u> Description #</u></label>
+                            <div id="despCon"></div>
+                            <button id="curBttn" type="button"> <img id="curImg"  src=""/> View Curriculum</button>
+                        </div-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var layerImg = "{% static 'img/layers.png' %}";
+    var unlink = "{% static 'img/unlink.png' %}";
+    var avatar = "{% static 'img/avatar.png' %}";
+    var tag = "{% static 'img/tag.png' %}";
+    var up = "{% static 'img/up.png' %}";
+    var down = "{% static 'img/down.png' %}";
+    var clock = "{% static 'img/clock.png' %}";
+</script>
+<script src="{% static 'js/main.js' %}"></script>
+</html>

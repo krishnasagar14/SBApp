@@ -1,0 +1,276 @@
+/**
+ * Created by krishnasagar on 24/9/16.
+ */
+
+#pageLogo {
+    color : green;
+    border-bottom : solid 2px black;
+    padding-bottom : 8px;
+    height : auto;
+    width : 100%;
+    border-radius : 5px;
+    vertical-align : middle;
+}
+#info1 {
+    color : #4CBB17;
+}
+#info2 {
+    margin-right : 10px;
+    font-size : 18px;
+}
+#logoId {
+    height : 55px;
+    width : 65px;
+    margin-right : 10px;
+}
+
+#side1 {
+    height : 300px;
+    display : inline-block;
+    border : 1px;
+    border-right : solid;
+    border-bottom : solid;
+    border-top : solid;
+}
+
+#sortBttn {
+    height : 35px;
+    width : 100%;
+    border : solid #008000;
+    border-radius : 10px;
+    background-color : #f0f5f5;
+    color : grey;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+#sortImg {
+    height : 20px;
+    width : 20px;
+    float : left;
+}
+#divRadios {
+    padding-left : 13px;
+    border : 1px solid #2E8B57;
+}
+#divR {
+    margin-top : 5px;
+}
+
+#msgBox {
+    border : 1px solid #2E8B57;
+    border-radius : 10px;
+    height : 35px;
+    width : 100%;
+    margin-top : 68px;
+    text-align : center;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    background-color : #f0f5f5;
+}
+
+#tagsCon {
+    height : 450px;
+    overflow-y : scroll;
+    overflow-x : hidden;
+    display : inline-block;
+}
+#side2 {
+    height : 450px;
+    border : 1px;
+    border-top : solid;
+}
+
+#searchbox {
+    float : left;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    width : 330px;
+    height : 40px;
+    border : 4px solid #888888;
+    border-radius : 15px;
+}
+#searchBttn {
+    margin-top : 10px;
+    margin-bottom : 0;
+    margin-left : 5px;
+    height : 40px;
+}
+#searchDiv1 {
+    width : 100%;
+    height : 22px;
+    margin-top : 5px;
+    margin-bottom : 5px;
+    text-align : left;
+    vertical-align : middle;
+}
+
+#pathCon {
+    border : 1px solid #888888;
+    border-radius : 15px;
+    width : 100%;
+    height : 410px;
+    display : inline-block;
+}
+#divTop {
+    width : 100%;
+    height : 50%;
+    margin-bottom : 10px;
+    display : inline-block;
+}
+#pathImg {
+    height : 180px;
+    width : 320px;
+}
+#pathLabel {
+    width : 700px;
+    height : 50px;
+    padding-top : 5px;
+    padding-bottom : 5px;
+    font-size : 26px;
+    font-weight : bold;
+    vertical-align : middle;
+    text-align: center;
+    background-color : #606060 ;
+    color : white;
+    border-radius : 15px;
+    margin-bottom : 5px;
+}
+#otherInfo {
+    width : 722px;
+    height : 130px;
+}
+#tagListId {
+    width : 100%;
+    height : 30px;
+    margin-bottom : 35px;
+}
+#tagId {
+    height : 20px;
+    width : 20px;
+}
+#oneTag {
+    width : 200px;
+    height : 50px;
+    text-align : left;
+    float : left;
+}
+#det {
+    width : auto;
+    height : 20px;
+    background-color : #ccffdd;
+    margin-right : 5px;
+    font-size : 15px;
+}
+#upImg {
+    width : 10px;
+    height : 10px;
+}
+#downImg {
+    width : 10px;
+    height : 10px;
+}
+#twoTag {
+    width : 300px;
+    height : 35px;
+    float : right;
+    text-align : right;
+}
+#det1 {
+    width : auto;
+    background-color : #ccffdd;
+    margin-right : 12px;
+}
+#uImg {
+    width : 10px;
+    height : 10px;
+}
+#clockImg {
+    width : 10px;
+    height : 10px;
+}
+#divTop1 {
+    display : inline-block;
+}
+
+#divBottom {
+    width : 100%;
+    height : 50%;
+    margin-top : 10px;
+    display : inline-block;
+}
+#despCon {
+    width : 100%;
+    height : 90px;
+    border :2px #009933 solid;
+    border-radius : 15px;
+    margin-bottom : 2px;
+    background-color : #e6ffe6;
+    padding : 5px 10px 5px 10px;
+    display : inline-block;
+}
+#curBttn {
+    width : auto;
+    text-align : center;
+    height : 45px;
+    background-color : #008000;
+    color : white;
+    border-radius : 8px;
+    margin-left : 890px;
+
+}
+#curImg {
+    width : 20px;
+    height : 20px;
+}
+
+#tagsBttn {
+    margin-left : 10px;
+    margin-top : 40px;
+    height : 45px;
+}
+
+#tagsMenu {
+    overflow-y : scroll;
+    height : 180px;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0; opacity:1 }
+}
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
